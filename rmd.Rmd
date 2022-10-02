@@ -1,0 +1,63 @@
+---
+title: "Ética ao analisar dados"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+### O que é ética?
+Ao longo da história vários autores escreveram sobre a ética e a sua visão sobre o assunto. Resolvemos trazer aqui uma frase dita pelo  filósofo brasileiro Mario Sérgio Cortella para nos ajudar a refletir sorbre o tema, mas vale ressaltar que ética é um assunto extremamente importante para tudo que vamos fazer. Assim, recomendamos fortemente a procura pelo assunto. 
+"Ética é o conjunto de valores e princípios que usamos para responder a três grandes questões da vida: (1) quero?; (2) devo?; (3) posso?
+Nem tudo que eu quero eu posso; nem tudo que eu posso eu devo; e nem tudo que eu devo eu quero. Você tem paz de espírito quando aquilo que você quer é ao mesmo tempo o que você pode e o que você deve.". Você pode pensar nessa definição como referência toda vez que tratarmos de ética ao longo do texto.
+
+
+
+### E o que é uma análise de dados? 
+
+Bom, podemos dizer de uma forma bem direta que analisar dados é transformar dados em informação. Dados brutos são gerados a todo momento de diferentes maneiras, basicamente toda ação realizada pelo ser humano é capaz de gerar dados hoje em dia. E por que é necessário analisar esses dados? Os dados em sua forma bruta dificilmente será capaz de transmitir informações em geral, por exemplo, imagine que você resolveu pesquisar informações sobre casos de gestantes e puérperas notificados com Síndrome Respiratória Aguda Grave e a única coisa que encontra é a base SIVEP Gripe (Sistema de Informação da Vigilância Epidemiológica da Gripe) disponibilizada pelo Ministério da Saúdo. Você seria capaz de olhar aquela gigantesca base de dados e extrair as informações que deseja? dificilmente.  O objetivo da análise de dados é exatamente esse, trazer informações relevantes para nos ajudar na tomada de decisão, é necessário para conseguir responder perguntas e questionamentos levantados. Vamos nos adentrar um pouco mais neste assunto ao longo do post. Ah, caso tenha tido interesse em se atualizar sobre casos de gestantes e puérperas notificados com Síndrome Respiratória Aguda Grave nós temos um painel interativo com diversas análises e informações (não precisa tentar tirar informações dos dados brutos, rs). Você pode acessar clicando [aqui](https://observatorioobstetrico.shinyapps.io/covid_gesta_puerp_br/).
+
+### Por que essas precisamos da ética na análise de dados?
+
+Apesar de ética e análise de dados parecerem duas coisas sem conexão alguma, diversos problemas podem acontecer quando análises de dados são feitas sem ética.
+ Toda profissão tem seu código de ética, já imaginou como seria a medicina sem seu código de ética? O médico poderia focar apenas em seus lucros, cobrar valores exorbitantes para problemas simples, pessoas sem qualificação poderiam realizar cirurgias, produtos que causam danos à saúde poderiam ser facilmente encontrados, entre outros problemas. Ou como seria o direito sem a ética? e como seria as análises de dados sem a ética? bom, é o que tentaremos explicar neste post.
+
+Para começar vamos dar exemplos a dois casos famosos que envolveram dados. 
+
+Em 2018 o Ministério Público constatou o vazamento de dados pessoais do site de comércio eletrônico Netshoes de mais de 2 milhões de pessoas.  Foram vazados dados como nome, CPF, e-mail, data de nascimento, histórico de compras, entre outros. Devido à ausência de uma lei voltada para a proteção de dados pessoais, a empresa só dará início ao processo de comunicar seus clientes a respeito do vazamento após um período de mais de três meses após o acontecido, deixando as vítimas sem o conhecimento do ocorrido.
+
+
+Outro caso a ser mencionado é o escândalo da Cambridge Analytica que envolveu o Facebook. Para resumir, a empresa utilizou um aplicativo para coletar informações de mais de 80 milhões de usuários do Facebook sem seu conhecimento.  A coleta de dados começou em 2014 envolvendo usuários que quiseram participar do teste promovido por meio do aplicativo, o grande problema foi que, ao essas pessoas concordarem em participar dos testes, elas também entregariam, sem saber, não só as suas informações privadas, mas também a de todos os seus amigos. Estes dados incluíam detalhes sobre nome, identidade, moradia, gostos e hábitos, entre outros. A empresa Cambridge Analytica utilizou esses dados para traçar perfis psicológicos dos usuários e com essas informações influenciar diversas eleições por meio de propaganda política direcionada. "Fornecer a informação certa à pessoa certa, no momento certo é mais importante do que nunca", afirma uma propaganda da Cambridge Analytica sobre marketing eleitoral. Caso tenha interesse neste caso, a Netflix produziu um documentário chamado Privacidade Hackeada muito interessante em 2019. Fica aqui a nossa recomendação para você unir o útil (entender mais sobre o assunto) ao agradável (assistir um filme antes de dormir).
+
+Para entender melhor onde a ética se encaixa nesses casos, vamos dividir a análise de dados em etapas e mencionar onde a ética se encaixa em cada etapa. Após isso, você pode refletir sobre o que poderia ser feito para evitar essas catástrofes.
+
+
+Podemos difundir a análise de dados em três etapas: Coleta dos dados, armazenamento e compartilhamento de dados e é claro, a parte de análise propriamente dita. Vamos falar um pouco de cada uma. 
+
+A coleta dos dados é o primeiro passo para se obter qualquer informação. Esses dados podem ser coletados de diversas formas como arquivos físicos, dados públicos, dados de mídias sociais, entre outros. Nesta etapa é muito importante ter a ciência da necessidade, e do direito, à privacidade e ao sigilo dos dados, para que seja garantida a proteção de seus dados pessoais.  A falta da ética nessa etapa pode gerar não só os problemas mencionados acima (privacidade de sigilo dos dados) como também a manipulações e obtenção de faltas análises. Um profissional sem o uso da ética poderia facilmente manipular resultados já no primeiro estágio da pesquisa. Uma coleta de dados mal feita, seja propositalmente ou não pode trazer resultados controversos. "Não é necessário que os resultados de uma pesquisa sejam manipulados - ou seja, que eles sejam deliberadamente alterados com o objetivo de criar uma impressão falsa - pois um simples e intencional direcionamento durante a seleção da amostra manipulará o resultado da pesquisa automaticamente" - Darrel Huff.
+
+Vamos falar uma pouco sobre o armazenamento e compartilhamento dos dados. Um desafio encontrado, principalmente se tratando de um enorme volume de dados, é pode armazená-los de uma maneira que supra as necessidades de consultas e análises após o armazenamento, ou seja, os dados não podem ser armazenados de qualquer forma. Existem diversas ferramentas (principalmente de armazenamento na nuvem) e formatos para o armazenamento de dados hoje, assim podemos ter várias soluções para contornar os problemas de armazenamentos, então, onde entra a ética aqui? sendo direto, na segurança do armazenamento desses dados. Ataques de hackers às bases de dados de empresas são extremamente comuns (como o exemplo da netshoes) e dificilmente deixarão de existir. Para contornar isso, ações do ponto de vista ético precisam andar lado a lado com o armazenamento de dados para minimizar as falhas existentes. Atitudes como, a coleta e armazenamento de dados pessoais podem acontecer somente mediante autorização explicita dada pelo usuário, avisar imediatamente aos proprietários dos dados pessoais caso aconteça alguma vazamento, avisar de forma clara ao usuário caso a finalidade de uso de dados tenham sido alteradas desde a primeira autorização de uso. Entre outras. Se tratando do compartilhamento de dados, a mesma ética utilizada na parte de coleta e do armazenamento pode e deve ser usada aqui. Compartilhar informações de uma entidade para outra pode ser uma tarefa tão fácil que parece ser inofensiva, porém aqui se aplica todos os princípios éticos mencionados acima.
+
+Por último, o foco deste post, as análises dos dados. A etapa de análises, como já dito na introdução, visa manipular e transformar todo aquele dado coletado e armazenado em informações relevantes para o contexto inserido. Esta etapa, exige um conhecimento minimante básico (a depender das análises) sobre o seu conjunto de dados, sobre estatística, sobre o seu público e sobre o contexto geral para a qual a informação será gerada. Erros propositais ou não podem gerar catástrofes na apresentação dos resultados. Essa talvez seja a etapa onde a ética é mais importante. É relativamente "fácil" omitir ou transmitir informações erradas. O livro **como mentir com estatística** escrito por Darrel Huff (mencionado anteriormente) trata muito bem deste assunto e é uma leitura indispensável no ramo de análises de dados. A falta de profissionais verdadeiramente capacitados em analisar dados, como os estatísticos por exemplo, abre brechas para as empresas contratarem pessoas de áreas diferentes para realizar este serviço, o que pode vir a ser um problema. O problema não fica apenas para análises "erradas", mas também para as análises precisas, como foi o exemplo da Cambridge analytics, eles foram capazes de manipular os resultados de eleições utilizando análises de dados. A manipulação de comportamento, previsão de comportamento e coisas do tipo tornou-se comum atualmente, podemos perceber isso facilmente em anúncios nas redes sociais, ora, vai me dizer que nunca apareceu em sua rede social um anúncio e imaginou que seu celular estava te escutando? Isto é "apenas" o seu comportamento sendo precisamente previsto.
+Poderíamos ficar o dia todo falando sobre as possibilidades e a diversidade da análise de dados, mas voltando ao foco, onde cabe a ética aqui? Talvez a parte mais importante e já mencionada acima é a privacidade do indivíduo. Quando uma base de dados for disponibilizada para análises é essencial que os dados sejam anonimizado, ou seja, que não cosigamos indentificar de fato quem é aquela pessoa. Bom, outras coisas cabem a discussão aqui, mas acredito que nesta etapa do post você já tenha desenvolvido conhecimento e senso crítico o suficiente para tirar suas próprias conclusões sobre ética nas análises de dados. Propomos um desafio a você, mentalize os acontecimentos citados a cima e pense na ética, em coisas que você faria difente. talvez a definição do Cortella sobre as 3 perguntas que usamos no começo do post seja uma bom caminho para você seguir. 
+ 
+ 
+
+##### “O espírito humano precisa prevalecer sobre a tecnologia”. Albert Einstein.
+
+
+# Referências 
+
+<https://monografias.brasilescola.uol.com.br/computacao/etica-no-big-data-protecao-dos-dados-cenario-brasileiro.htm>
+
+
+<https://medium.com/somos-tera/o-que-e-etica-de-dados-3ce4702cdfc1#:~:text=A%20%C3%A9tica%20dos%20dados%20se%20concentra%20em%20problemas%20%C3%A9ticos%20impostos,bem%20como%20%E2%80%9Cdados%20abertos%E2%80%9D.>
+
+
+
+
+
+
